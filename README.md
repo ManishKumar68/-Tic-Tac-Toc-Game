@@ -2,4 +2,13 @@
 
 Tic-Tac-Toe — Java Console Game Engine
 
-A clean, modular, and well-structured Java implementation of the classic Tic-Tac-Toe game, designed with clarity, extensibility, and best coding practices in mind.
+| Component      | Responsibility              |
+| -------------- | --------------------------- |
+| `board[][]`    | Maintains game state        |
+| `printBoard()` | Handles board visualization |
+| `haveWon()`    | Evaluates win conditions    |
+| `main()`       | Controls game flow          |
+
+<h2>Control Flow Diagram</h2>
+
+
