@@ -32,8 +32,6 @@ flowchart TD
     K --> M[END]
     L --> E
 
-
-
 <h6>Execution Instructions</h6>
 <h6>Compile</h6>
 javac Main.java
