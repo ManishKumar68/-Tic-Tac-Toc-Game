@@ -17,20 +17,21 @@ Tic-Tac-Toe — Java Console Game Engine
 flowchart TD
     A[START] --> B[Initialize Board]
     B --> C[Read Player Names]
-    C --> D[Set Current Player (X)]
+    C --> D["Set Current Player - X"]
     D --> E[Display Board]
-    E --> F[Read Move (Row, Column)]
+    E --> F["Read Move - Row and Column"]
     F --> G{Is Cell Empty?}
 
-    G -- YES --> H[Place Move]
-    G -- NO --> I[Reject Move]
+    G -- Yes --> H[Place Move]
+    G -- No --> I[Reject Move]
 
     H --> J{Check Win?}
-    J -- YES --> K[Declare Winner]
-    J -- NO --> L[Switch Player]
+    J -- Yes --> K[Declare Winner]
+    J -- No --> L[Switch Player]
 
     K --> M[END]
     L --> E
+
 
 
 <h6>Execution Instructions</h6>
