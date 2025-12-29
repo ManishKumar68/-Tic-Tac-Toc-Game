@@ -11,35 +11,27 @@ Tic-Tac-Toe — Java Console Game Engine
 
 <h6>Control Flow Diagram</h6>
 
-┌────────────┐
-│  START     │
-└─────┬──────┘
-      ↓
-Initialize Board
-      ↓
-Read Player Names
-      ↓
-Set Current Player (X)
-      ↓
-Display Board
-      ↓
-Read Move (Row, Column)
-      ↓
-Is Cell Empty?
-   ┌──┴───┐
-  YES    NO
-   ↓      ↓
-Place     Reject
-Move      Move
-   ↓
-Check Win?
-   ┌──┴───┐
-  YES    NO
-   ↓      ↓
-Declare  Switch
-Winner   Player
-   ↓
-  END
+## Tic Tac Toe Game Flow
+
+```mermaid
+flowchart TD
+    A[START] --> B[Initialize Board]
+    B --> C[Read Player Names]
+    C --> D[Set Current Player (X)]
+    D --> E[Display Board]
+    E --> F[Read Move (Row, Column)]
+    F --> G{Is Cell Empty?}
+
+    G -- YES --> H[Place Move]
+    G -- NO --> I[Reject Move]
+
+    H --> J{Check Win?}
+    J -- YES --> K[Declare Winner]
+    J -- NO --> L[Switch Player]
+
+    K --> M[END]
+    L --> E
+
 
 <h6>Execution Instructions</h6>
 <h6>Compile</h6>
