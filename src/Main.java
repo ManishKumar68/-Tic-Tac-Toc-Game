@@ -68,7 +68,7 @@ public class Main {
             }
         }
 
-        // diagonals check
+        // diagonals check..
         if (board[0][0] == player &&
                 board[1][1] == player &&
                 board[2][2] == player) {
